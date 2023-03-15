@@ -1,5 +1,6 @@
 .wrapper {
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .label {
@@ -11,6 +12,8 @@
   padding-bottom: 0.1rem;
 }
 
+
+
 .textArea {
   font-family: var(--type-first);
   border: 0.5px solid #464646;
@@ -21,10 +24,34 @@
   background: transparent;
   transition: 0.3s;
 }
+
 .textArea:focus,
 .textArea:hover {
   outline: none;
   border-color: #f1f1f1;
   background: #f1f1f1;
   box-shadow: 0 0 0 2px #f1f1f1;
+}
+
+.wrapper::after {
+  position: absolute;
+  content: '';
+  right: -12px;
+  top: 27.5px;
+  width: 35px;
+  height: 20px;
+  rotate: 45deg;
+  border-bottom: 0.5px solid #464646;
+  background: #1e1e1e;
+  transition: 0.3s;
+}
+
+.wrapper:hover::after,
+.wrapper:focus::after {
+  outline: none;
+  right: -14px;
+  top: 25.5px;
+  border-color: transparent;
+  border-bottom: 0.5px solid #1e1e1e;
+  box-shadow: 0 0 0 2px #1e1e1e;
 }

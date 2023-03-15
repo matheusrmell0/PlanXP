@@ -56,8 +56,8 @@
 
 .mobileButton {
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   background: #939598;
   border: 1px solid transparent;
   cursor: pointer;
@@ -68,11 +68,11 @@
 .mobileButton::after {
   content: '';
   display: block;
-  width: 2.5rem;
-  height: 5px;
+  width: 1.775rem;
+  height: 4px;
   background: currentColor;
   border-radius: 2px;
-  box-shadow: 0 12px currentColor, 0 -12px currentColor;
+  box-shadow: 0 8px currentColor, 0 -8px currentColor;
   transition: 0.1s;
 }
 .mobileButton:focus,
@@ -86,10 +86,10 @@
 }
 .mobileButtonActive::after {
   transform: rotate(-90deg);
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  box-shadow: 0 18px currentColor, 0 -18px currentColor;
+  box-shadow: 0 12px currentColor, 0 -12px currentColor;
 }
 .navMobile {
   display: block;
@@ -167,16 +167,16 @@
 
 @media (max-width: 570px) {
   .mobileButton {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .mobileButton::after {
-    width: 1.7rem;
+    width: 1.5rem;
     height: 3px;
-    box-shadow: 0 8px currentColor, 0 -8px currentColor;
+    box-shadow: 0 7px currentColor, 0 -7px currentColor;
   }
   .header {
-    padding: 1.5rem 1rem 0.5rem 1rem;
+    padding: 1rem;
   }
   .mobileButtonActive::after {
     width: 4px;
