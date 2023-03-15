@@ -15,7 +15,7 @@ const Button = ({
         {...props}
         className={styles.button}
       >
-        {children} ↘
+        {children}
       </button>
     </>
   );

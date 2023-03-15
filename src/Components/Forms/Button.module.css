@@ -27,3 +27,11 @@
   opacity: 0.5rem;
 }
 
+.button::after{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  background: url('../../Assets/icones/arrow-right-bottom.svg');
+}
